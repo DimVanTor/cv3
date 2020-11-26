@@ -1,0 +1,219 @@
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  background-color: #EAF6F6;     /*** WITHOUT THIS THERE WILL BE BLANK AREAS (CHECK!) ***/
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 10px;    /**** ADDED (lecture 62.)*****/
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;    /*** WE CUT AND PASTED THIS FROM ".skills-row" SO THAT THE TEXT (<p>s)IN THE ENTIRE WEB PEGE STYLED THE SAME (lecture 62. 6:15) ***/
+}
+
+hr {          /*** BECAUSE IT IS AN HTML ELEMENT WE'LL PUT IT WITH THE OTHER HTML ELEMENTS (lecture 62. 7:20)***/
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+/***
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 7px;
+  width: 4%;
+  color: #dddddd;
+  margin: 50px auto 70px auto;
+}
+***/
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;   /**** ADDED (16:20) ****/
+  margin: 10px 20px;    /**** (16:45) ****/
+  text-decoration: none;  /*** TO GET RID OF underline AS BY DEFAULT text-decoration IS UNDERLINED BY THE BROWSER (17:20) ****/
+}
+
+a:hover{   /**** ADDED (18:10) ****/
+  color: #EAF6F6;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  background-color: #EAF6F6;
+  margin: 100px 0;             /**** ADDED (lecture 62. 4:00)*****/
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;   /****************** CHANGE TO THIS (height: 150px;)to this --> padding: 50px 0 20px; (Lec.62. 14:35) ********************/
+}
+
+/***** INSTEAD WE SHOULD USE anchor tag (.a) up here in html section, because it's not a class (lines 49-51 of index.html)
+.footer-link {
+  color: #11999E;
+  position: relative;
+  top: 50px;
+  display: inline-block;
+  width: 100px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+}
+*/
+
+
+span.pro {
+  text-decoration: underline;
+}
+
+span.pro:hover {
+  color: #11CDD4;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;     /*** IT WAS 50px (lecture 62. 6:45) ***/
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;    /*** IT WAS 300px (lecture 62. 6:55) ***/
+  bottom: 300px
+}
+
+.skill-row {
+width: 50%;
+margin: 100px auto 100px auto;
+text-align: left;
+
+}
+
+.management-img {
+  width: 12rem;
+  float: left;
+  margin-right: 30px;
+}
+
+.communication-img {
+  width: 15rem;
+  float: right;
+  margin-left: 30px;
+  }
+
+.my-photo {
+  width: 20rem;
+                      /**** Line 69 added(lecture 62. 4:00) so this "margin-top: 70px;" is deleted  *****/
+}
+
+.my-description {
+  width: 30%;       /**** I HAD 25% (Lec.62. 4:58, .intro) ***/
+margin: auto;
+}
+
+.contact-message {   /*** ADD THIS INSTEAD OF MAKING A <br> in index.html (lecture 62. 9:44)   ***/
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.h3-second {
+  margin-bottom: 30px;
+}
+
+/*.btn {
+   background: #66BFBF;
+   background-image: -webkit-linear-gradient(top, #66BFBF, #66BFBF);
+   background-image: -moz-linear-gradient(top, #66BFBF, #66BFBF);
+   background-image: -ms-linear-gradient(top, #66BFBF, #66BFBF);
+   background-image: -o-linear-gradient(top, #66BFBF, #66BFBF);
+   background-image: -webkit-gradient(to bottom, #66BFBF, #66BFBF);
+   -webkit-border-radius: 11px;
+   -moz-border-radius: 11px;
+   border-radius: 11px;
+   color: #FFFFFF;
+   font-family: Verdana;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 0;
+   -webkit-box-shadow: 0 0 0 0 #000000;
+   -moz-box-shadow: 0 0 0 0 #000000;
+   box-shadow: 0 0 0 0 #000000;
+   border: solid #66BFBF 15px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+
+
+}
+/**** .middle-container (Line 58 ) added (lecture 62. 4:00) so this "margin-bottom: 70px;" is deleted  *****/
+
+ /*** lecture 62. 10:57 ***/
+ .btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;  /*** WE CHANGE THE FONT-FAMITY FROM Arial (lecture 62. 12:50)  ***/
+    font-size: 21px;
+    font-weight: 100;
+    padding: 10px;      /*** changed from 20px ***/
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+
+ .btn:hover {
+    /*** DELETED BORDER (border: solid #337FED 1px;) ***/
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+ }
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;    /**** CHANGEd FROM "smaller;" (19:15) ****/
+  padding: 20px 0; /**** ADDED (19:35) ****/
+  /**** REVOME THIS "position: relative;") ****/
+  /**** REVOME THIS "top: 70px;") ****/
+}
